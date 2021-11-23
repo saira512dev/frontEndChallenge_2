@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Body-bg: hsl(217, 54%, 11%);
+  --Main-bg: hsl(216, 50%, 16%);
+  --Line-color: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Overlay-color: hsla(178, 100%, 50%, 0.5);
+}
+
+body {
+  background: var(--Body-bg);
+  font-family: "Outfit", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background: var(--Main-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 325px;
+  height: 82vh;
+  margin: 15px auto;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#card {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 20px 20px 0px 20px;
+  height: 100%;
+}
+
+/* #img-eth-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px 15px 15px 15px;
+} */
+
+#image-equilibrium {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px 8px 8px 8px;
+  // z-index: 10;
+}
+
+#image-container {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: var(--Overlay-color);
+  width: 99%;
+  height: 277px;
+  // z-index: -1;
+  visibility: hidden;
+  border-radius: 8px 8px 8px 8px;
+
+  #icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#wrapper:hover #image-container {
+  visibility: visible;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 23px;
+  color: var(--White);
+}
+
+h1:hover {
+  color: var(--Cyan);
+}
+
+p {
+  font-size: 18px;
+  color: var(--Soft-blue);
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#eth-text {
+  color: var(--Cyan);
+  margin-right: 90px;
+  align-self: flex-start;
+}
+
+#clock-text {
+  color: var(--Soft-blue);
+}
+
+hr {
+  margin-bottom: 5px;
+  border: 1px solid var(--Line-color);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#footer-img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+footer-text {
+  margin-bottom: 10px;
+}
+
+#footer-text-part-1 {
+  color: var(--Soft-blue);
+}
+
+#footer-text-name {
+  color: var(--White);
+  margin-left: 5px;
+}
+
+#footer-text-name:hover {
+  color: var(--Cyan);
+}
