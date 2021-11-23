@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/saira512dev/frontEndChallenge_2)
+- Live Site URL: (https://zealous-spence-1fd1ef.netlify.app/)
 
 ## My process
 
