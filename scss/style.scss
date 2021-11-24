@@ -29,8 +29,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 325px;
-  height: 82vh;
+  width: 350px;
+  height: 540px;
   margin: 15px auto;
   border-radius: 15px 15px 15px 15px;
 }
@@ -58,6 +58,7 @@ main {
   height: 277px;
   visibility: hidden;
   border-radius: 8px 8px 8px 8px;
+  transition: 0.3s ease-in-out;
 
   #icon-view {
     position: absolute;
@@ -75,6 +76,7 @@ h1 {
   margin: 15px 0;
   font-size: 23px;
   color: var(--White);
+  transition: 0.3s ease-in-out;
 }
 
 h1:hover {
@@ -135,6 +137,7 @@ footer-text {
 #footer-text-name {
   color: var(--White);
   margin-left: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 #footer-text-name:hover {
