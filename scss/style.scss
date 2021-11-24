@@ -29,13 +29,13 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px;
+  width: 345px;
   height: 540px;
-  margin: 15px auto;
+  margin: 5px auto;
   border-radius: 15px 15px 15px 15px;
 }
 
-#card {
+.card {
   position: relative;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ main {
   border-radius: 8px 8px 8px 8px;
 }
 
-#image-container {
+.image-container {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -68,7 +68,7 @@ main {
   }
 }
 
-#wrapper:hover #image-container {
+.wrapper:hover #image-container {
   visibility: visible;
 }
 
@@ -77,10 +77,10 @@ h1 {
   font-size: 23px;
   color: var(--White);
   transition: 0.3s ease-in-out;
-}
 
-h1:hover {
-  color: var(--Cyan);
+  &:hover {
+    color: var(--Cyan);
+  }
 }
 
 p {
@@ -89,20 +89,20 @@ p {
   margin-bottom: 10px;
 }
 
-#list {
+.list {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-}
 
-#eth-text {
-  color: var(--Cyan);
-  margin-right: 90px;
-  align-self: flex-start;
-}
+  .eth-text {
+    color: var(--Cyan);
+    margin-right: 90px;
+    align-self: flex-start;
+  }
 
-#clock-text {
-  color: var(--Soft-blue);
+  .clock-text {
+    color: var(--Soft-blue);
+  }
 }
 
 hr {
@@ -115,31 +115,31 @@ footer {
   justify-content: flex-start;
   align-items: center;
   margin: 15px 0;
-}
 
-#footer-img {
-  width: 35px;
-  height: 35px;
-  margin-right: 20px;
-  border: 1px solid white;
-  border-radius: 50px;
-  margin-bottom: 5px;
-}
+  #footer-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-bottom: 5px;
+  }
 
-footer-text {
-  margin-bottom: 10px;
-}
+  .footer-text {
+    margin-bottom: 10px;
 
-#footer-text-part-1 {
-  color: var(--Soft-blue);
-}
+    #footer-text-part-1 {
+      color: var(--Soft-blue);
+    }
 
-#footer-text-name {
-  color: var(--White);
-  margin-left: 5px;
-  transition: 0.3s ease-in-out;
-}
+    #footer-text-name {
+      color: var(--White);
+      margin-left: 5px;
+      transition: 0.3s ease-in-out;
 
-#footer-text-name:hover {
-  color: var(--Cyan);
+      &:hover {
+        color: var(--Cyan);
+      }
+    }
+  }
 }
