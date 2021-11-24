@@ -17,20 +17,22 @@
 }
 
 body {
-  background: var(--Body-bg);
   font-family: "Outfit", sans-serif;
-  height: 100%;
+}
+
+.container {
+  background: var(--Body-bg);
+  border: 1px solid white;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 main {
   background: var(--Main-bg);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 345px;
-  height: 540px;
   margin: 5px auto;
   border-radius: 15px 15px 15px 15px;
 }
@@ -68,7 +70,7 @@ main {
   }
 }
 
-.wrapper:hover #image-container {
+.wrapper:hover .image-container {
   visibility: visible;
 }
 
